@@ -1,0 +1,12 @@
+{
+  "usersApp": {
+    "EstadoCivil": {
+      "null": "",
+      "SOLTEIRO": "SOLTEIRO",
+      "CASADO": "CASADO",
+      "SEPARADO": "SEPARADO",
+      "DIVOROCIADO": "DIVOROCIADO",
+      "VIUVO": "VIUVO"
+    }
+  }
+}

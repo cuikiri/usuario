@@ -1,0 +1,22 @@
+{
+  "usersApp": {
+    "fotoFotoAvatar": {
+      "home": {
+        "title": "Foto Avatars",
+        "createLabel": "Crear nuevo Foto Avatar",
+        "createOrEditLabel": "Crear o editar Foto Avatar",
+        "notFound": "Ningún Foto Avatars encontrado"
+      },
+      "created": "Un nuevo Foto Avatar ha sido creado con el identificador {{ param }}",
+      "updated": "Un Foto Avatar ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Foto Avatar ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Foto Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Foto Avatar"
+      },
+      "conteudo": "Conteudo"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "usersApp": {
+    "userAviso": {
+      "home": {
+        "title": "Avisos",
+        "createLabel": "Create a new Aviso",
+        "createOrEditLabel": "Create or edit a Aviso",
+        "notFound": "No Avisos found"
+      },
+      "created": "A new Aviso is created with identifier {{ param }}",
+      "updated": "A Aviso is updated with identifier {{ param }}",
+      "deleted": "A Aviso is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Aviso {{ id }}?"
+      },
+      "detail": {
+        "title": "Aviso"
+      },
+      "data": "Data",
+      "leitura": "Leitura",
+      "titulo": "Titulo",
+      "conteudo": "Conteudo",
+      "tipo": "Tipo",
+      "dadosPessoais": "Dados Pessoais"
+    }
+  }
+}

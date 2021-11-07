@@ -1,0 +1,27 @@
+{
+  "usersApp": {
+    "userMensagem": {
+      "home": {
+        "title": "Mensagems",
+        "createLabel": "Crear nuevo Mensagem",
+        "createOrEditLabel": "Crear o editar Mensagem",
+        "notFound": "Ningún Mensagems encontrado"
+      },
+      "created": "Un nuevo Mensagem ha sido creado con el identificador {{ param }}",
+      "updated": "Un Mensagem ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Mensagem ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Mensagem {{ id }}?"
+      },
+      "detail": {
+        "title": "Mensagem"
+      },
+      "data": "Data",
+      "leitura": "Leitura",
+      "titulo": "Titulo",
+      "conteudo": "Conteudo",
+      "tipo": "Tipo",
+      "dadosPessoais": "Dados Pessoais"
+    }
+  }
+}

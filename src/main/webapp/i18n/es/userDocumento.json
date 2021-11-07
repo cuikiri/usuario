@@ -1,0 +1,25 @@
+{
+  "usersApp": {
+    "userDocumento": {
+      "home": {
+        "title": "Documentos",
+        "createLabel": "Crear nuevo Documento",
+        "createOrEditLabel": "Crear o editar Documento",
+        "notFound": "Ningún Documentos encontrado"
+      },
+      "created": "Un nuevo Documento ha sido creado con el identificador {{ param }}",
+      "updated": "Un Documento ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Documento ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Documento {{ id }}?"
+      },
+      "detail": {
+        "title": "Documento"
+      },
+      "descricao": "Descricao",
+      "tipo": "Tipo",
+      "foto": "Foto",
+      "dadosPessoais": "Dados Pessoais"
+    }
+  }
+}

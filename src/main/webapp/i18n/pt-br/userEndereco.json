@@ -1,0 +1,35 @@
+{
+  "usersApp": {
+    "userEndereco": {
+      "home": {
+        "title": "Enderecos",
+        "createLabel": "Criar novo Endereco",
+        "createOrEditLabel": "Criar ou editar Endereco",
+        "notFound": "Nenhum Endereco encontrado"
+      },
+      "created": "Um novo Endereco foi criado com o identificador {{ param }}",
+      "updated": "Um Endereco foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Endereco foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Endereco {{ id }}?"
+      },
+      "detail": {
+        "title": "Endereco"
+      },
+      "cep": "Cep",
+      "logradouro": "Logradouro",
+      "complemento1": "Complemento 1",
+      "complemento2": "Complemento 2",
+      "numero": "Numero",
+      "bairro": "Bairro",
+      "localidade": "Localidade",
+      "uf": "Uf",
+      "unidade": "Unidade",
+      "ibge": "Ibge",
+      "gia": "Gia",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "dadosPessoais": "Dados Pessoais"
+    }
+  }
+}

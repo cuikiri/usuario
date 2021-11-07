@@ -1,0 +1,9 @@
+{
+  "usersApp": {
+    "TipoMensagem": {
+      "null": "",
+      "INFORMACAO": "INFORMACAO",
+      "COMUNICADO": "COMUNICADO"
+    }
+  }
+}

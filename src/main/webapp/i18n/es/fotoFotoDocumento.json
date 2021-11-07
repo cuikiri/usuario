@@ -1,0 +1,23 @@
+{
+  "usersApp": {
+    "fotoFotoDocumento": {
+      "home": {
+        "title": "Foto Documentos",
+        "createLabel": "Crear nuevo Foto Documento",
+        "createOrEditLabel": "Crear o editar Foto Documento",
+        "notFound": "Ningún Foto Documentos encontrado"
+      },
+      "created": "Un nuevo Foto Documento ha sido creado con el identificador {{ param }}",
+      "updated": "Un Foto Documento ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Foto Documento ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Foto Documento {{ id }}?"
+      },
+      "detail": {
+        "title": "Foto Documento"
+      },
+      "conteudo": "Conteudo",
+      "documento": "Documento"
+    }
+  }
+}

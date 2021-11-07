@@ -1,0 +1,31 @@
+{
+  "name": "FotoDocumento",
+  "fields": [
+    {
+      "fieldName": "conteudo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "documento",
+      "otherEntityRelationshipName": "foto",
+      "relationshipName": "documento",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20211108000035",
+  "entityTableName": "foto_documento",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "foto",
+  "applications": ["users"]
+}

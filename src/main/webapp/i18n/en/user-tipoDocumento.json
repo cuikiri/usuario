@@ -1,0 +1,15 @@
+{
+  "usersApp": {
+    "TipoDocumento": {
+      "null": "",
+      "RG": "RG",
+      "CPF": "CPF",
+      "NASCIMENTO": "NASCIMENTO",
+      "CNH": "CNH",
+      "CASAMENTO": "CASAMENTO",
+      "LUZ": "LUZ",
+      "AGUA": "AGUA",
+      "TELEFONE": "TELEFONE"
+    }
+  }
+}

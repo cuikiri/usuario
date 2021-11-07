@@ -1,0 +1,147 @@
+{
+  "name": "DadosPessoais",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "sobreNome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "pai",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "mae",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "telefone",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "8",
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "celular",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "8",
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "whatsapp",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "8",
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "9",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "estadoCivil",
+      "fieldType": "EstadoCivil",
+      "fieldValues": "SOLTEIRO,CASADO,SEPARADO,DIVOROCIADO,VIUVO",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "raca",
+      "fieldType": "Raca",
+      "fieldValues": "BRANCO,PARDA,NEGRA,AMARELA,INDIGENA",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "religiao",
+      "fieldType": "Religiao",
+      "fieldValues": "CATOLICO,PROTESTANTE,EVANGELICO,ESPIRITA,AFRO_BRASILEIRA,BUDISMO,JUDAICA,OUTRA",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "foto",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "foto",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "fotoAvatar",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "fotoAvatar",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "fotoIcon",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "fotoIcon",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "mensagem",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "mensagem"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "aviso",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "aviso"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "documento",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "documento"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "endereco",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "endereco"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user1",
+      "otherEntityRelationshipName": "dadosPessoais",
+      "relationshipName": "user",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20211107235235",
+  "entityTableName": "dados_pessoais",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "user",
+  "applications": ["users"]
+}

@@ -1,0 +1,25 @@
+{
+  "usersApp": {
+    "userUser1": {
+      "home": {
+        "title": "User 1 S",
+        "createLabel": "Create a new User 1",
+        "createOrEditLabel": "Create or edit a User 1",
+        "notFound": "No User 1 S found"
+      },
+      "created": "A new User 1 is created with identifier {{ param }}",
+      "updated": "A User 1 is updated with identifier {{ param }}",
+      "deleted": "A User 1 is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User 1 {{ id }}?"
+      },
+      "detail": {
+        "title": "User 1"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "dadosPessoais": "Dados Pessoais"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "usersApp": {
+    "fotoFotoIcon": {
+      "home": {
+        "title": "Foto Icons",
+        "createLabel": "Crear nuevo Foto Icon",
+        "createOrEditLabel": "Crear o editar Foto Icon",
+        "notFound": "Ningún Foto Icons encontrado"
+      },
+      "created": "Un nuevo Foto Icon ha sido creado con el identificador {{ param }}",
+      "updated": "Un Foto Icon ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Foto Icon ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Foto Icon {{ id }}?"
+      },
+      "detail": {
+        "title": "Foto Icon"
+      },
+      "conteudo": "Conteudo"
+    }
+  }
+}

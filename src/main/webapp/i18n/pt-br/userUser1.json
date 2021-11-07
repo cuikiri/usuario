@@ -1,0 +1,25 @@
+{
+  "usersApp": {
+    "userUser1": {
+      "home": {
+        "title": "User 1 S",
+        "createLabel": "Criar novo User 1",
+        "createOrEditLabel": "Criar ou editar User 1",
+        "notFound": "Nenhum User 1 encontrado"
+      },
+      "created": "Um novo User 1 foi criado com o identificador {{ param }}",
+      "updated": "Um User 1 foi atualizado com o identificador {{ param }}",
+      "deleted": "Um User 1 foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir User 1 {{ id }}?"
+      },
+      "detail": {
+        "title": "User 1"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "dadosPessoais": "Dados Pessoais"
+    }
+  }
+}

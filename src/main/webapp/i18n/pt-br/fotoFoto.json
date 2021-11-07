@@ -1,0 +1,22 @@
+{
+  "usersApp": {
+    "fotoFoto": {
+      "home": {
+        "title": "Fotos",
+        "createLabel": "Criar novo Foto",
+        "createOrEditLabel": "Criar ou editar Foto",
+        "notFound": "Nenhum Foto encontrado"
+      },
+      "created": "Um novo Foto foi criado com o identificador {{ param }}",
+      "updated": "Um Foto foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Foto foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Foto {{ id }}?"
+      },
+      "detail": {
+        "title": "Foto"
+      },
+      "conteudo": "Conteudo"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+application {
+  config {
+    baseName users,
+    packageName br.com.jhisolution.user,
+    applicationType monolith,
+    authenticationType jwt,
+    databaseType sql,
+    devDatabaseType mariadb,
+    prodDatabaseType mariadb,
+    nativeLanguage pt-br,
+    languages [pt-br, en,es],
+    clientTheme darkly,
+    clientThemeVariant dark,
+	clientFramework react,
+    websocket spring-websocket,
+	enableSwaggerCodegen true
+  }
+  entities *
+}
+ 
+enum EstadoCivil {
+    SOLTEIRO, CASADO, SEPARADO, DIVOROCIADO, VIUVO
+}
+
+enum Raca {
+    BRANCO,	PARDA, NEGRA, AMARELA, INDIGENA
+}
+ 
+enum Religiao {
+    CATOLICO, PROTESTANTE, EVANGELICO, ESPIRITA, AFRO_BRASILEIRA, BUDISMO, JUDAICA,	OUTRA
+}
+
+enum TipoDocumento {
+    RG, CPF, NASCIMENTO, CNH, CASAMENTO, LUZ, AGUA, TELEFONE
+}
+ 
+enum TipoMensagem {
+    INFORMACAO, COMUNICADO
+} 
+
+enum TipoAviso {
+    SOLICITACAO, ADVERTENCIA, SUSPENSAO, REUNIAO
+} 
+
+@clientRootFolder(user)
+entity User1 {
+    firstName String required minlength(1) maxlength(20),
+    lastName  String required minlength(1) maxlength(40),
+    email     String required minlength(1) maxlength(60)
+}
+
+@clientRootFolder(user)
+entity DadosPessoais {
+    nome        String required minlength(1) maxlength(20),
+    sobreNome   String required minlength(1) maxlength(50),
+    pai         String          minlength(1) maxlength(50),
+    mae         String          minlength(1) maxlength(50),
+    telefone    String          minlength(8) maxlength(20), 
+    celular     String required minlength(8) maxlength(20),
+    whatsapp    String          minlength(8) maxlength(20),
+    email       String required minlength(9) maxlength(50),
+    estadoCivil EstadoCivil required,
+    raca        Raca        required,
+    religiao    Religiao    required	
+ }
+
+@clientRootFolder(user)
+entity Endereco {
+    cep          String          minlength(8)  maxlength(10),
+    logradouro   String required minlength(1)  maxlength(50),
+    complemento1 String          minlength(1)  maxlength(50),
+    complemento2 String          minlength(1)  maxlength(50),
+    numero       String required minlength(1)  maxlength(10),
+    bairro       String required minlength(1)  maxlength(50),
+    localidade   String          minlength(1)  maxlength(50),
+    uf           String required minlength(1)  maxlength(50),
+    unidade      String required minlength(1)  maxlength(20),
+    ibge         String,
+    gia          String,
+    latitude     Float,
+    longitude    Float
+}
+
+@clientRootFolder(user)
+entity Mensagem {
+    data         ZonedDateTime  required,
+    leitura      ZonedDateTime,
+    titulo       String         required minlength(1) maxlength(40),
+    conteudo     String         required minlength(1) maxlength(1000),
+    tipo         TipoMensagem   required  
+}
+
+@clientRootFolder(user)
+entity Aviso {
+    data         ZonedDateTime  required,
+    leitura      ZonedDateTime,  
+    titulo       String         required minlength(1) maxlength(40),
+    conteudo     String         required minlength(1) maxlength(1000),
+    tipo         TipoAviso      required 
+}
+
+@clientRootFolder(user)
+entity Documento {
+   descricao String        required minlength(1) maxlength(50),
+   tipo      TipoDocumento required
+}
+
+@clientRootFolder(foto)
+entity Foto {
+    conteudo ImageBlob required
+}
+
+@clientRootFolder(foto)
+entity FotoAvatar {
+    conteudo ImageBlob required
+}
+
+@clientRootFolder(foto)
+entity FotoIcon {
+    conteudo ImageBlob required
+}
+
+@clientRootFolder(foto)
+entity FotoDocumento {
+    conteudo ImageBlob required
+}
+   
+
+relationship OneToOne {
+    User1{dadosPessoais}      to DadosPessoais{user},
+    DadosPessoais{foto}       to Foto,
+    DadosPessoais{fotoAvatar} to FotoAvatar, 
+    DadosPessoais{fotoIcon}   to FotoIcon,
+}
+
+relationship OneToMany {
+    DadosPessoais{mensagem}  to Mensagem,
+    DadosPessoais{aviso}     to Aviso,
+    DadosPessoais{documento} to Documento,
+    DadosPessoais{endereco}  to Endereco,
+    Documento{foto}          to FotoDocumento
+}
+
+paginate all with pagination
+service all with serviceImpl

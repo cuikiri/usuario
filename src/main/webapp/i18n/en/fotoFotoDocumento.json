@@ -1,0 +1,23 @@
+{
+  "usersApp": {
+    "fotoFotoDocumento": {
+      "home": {
+        "title": "Foto Documentos",
+        "createLabel": "Create a new Foto Documento",
+        "createOrEditLabel": "Create or edit a Foto Documento",
+        "notFound": "No Foto Documentos found"
+      },
+      "created": "A new Foto Documento is created with identifier {{ param }}",
+      "updated": "A Foto Documento is updated with identifier {{ param }}",
+      "deleted": "A Foto Documento is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Foto Documento {{ id }}?"
+      },
+      "detail": {
+        "title": "Foto Documento"
+      },
+      "conteudo": "Conteudo",
+      "documento": "Documento"
+    }
+  }
+}

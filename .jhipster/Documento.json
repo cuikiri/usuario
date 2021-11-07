@@ -1,0 +1,44 @@
+{
+  "name": "Documento",
+  "fields": [
+    {
+      "fieldName": "descricao",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "tipo",
+      "fieldType": "TipoDocumento",
+      "fieldValues": "RG,CPF,NASCIMENTO,CNH,CASAMENTO,LUZ,AGUA,TELEFONE",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "fotoDocumento",
+      "otherEntityRelationshipName": "documento",
+      "relationshipName": "foto"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "dadosPessoais",
+      "otherEntityRelationshipName": "documento",
+      "relationshipName": "dadosPessoais",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20211107235635",
+  "entityTableName": "documento",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "user",
+  "applications": ["users"]
+}

@@ -1,0 +1,12 @@
+{
+  "usersApp": {
+    "Raca": {
+      "null": "",
+      "BRANCO": "BRANCO",
+      "PARDA": "PARDA",
+      "NEGRA": "NEGRA",
+      "AMARELA": "AMARELA",
+      "INDIGENA": "INDIGENA"
+    }
+  }
+}

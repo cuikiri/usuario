@@ -1,0 +1,54 @@
+{
+  "name": "Aviso",
+  "fields": [
+    {
+      "fieldName": "data",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "leitura",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "titulo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "40"
+    },
+    {
+      "fieldName": "conteudo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "1",
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "tipo",
+      "fieldType": "TipoAviso",
+      "fieldValues": "SOLICITACAO,ADVERTENCIA,SUSPENSAO,REUNIAO",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "dadosPessoais",
+      "otherEntityRelationshipName": "aviso",
+      "relationshipName": "dadosPessoais",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20211107235535",
+  "entityTableName": "aviso",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "user",
+  "applications": ["users"]
+}

@@ -1,0 +1,22 @@
+{
+  "usersApp": {
+    "fotoFotoAvatar": {
+      "home": {
+        "title": "Foto Avatars",
+        "createLabel": "Create a new Foto Avatar",
+        "createOrEditLabel": "Create or edit a Foto Avatar",
+        "notFound": "No Foto Avatars found"
+      },
+      "created": "A new Foto Avatar is created with identifier {{ param }}",
+      "updated": "A Foto Avatar is updated with identifier {{ param }}",
+      "deleted": "A Foto Avatar is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Foto Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Foto Avatar"
+      },
+      "conteudo": "Conteudo"
+    }
+  }
+}

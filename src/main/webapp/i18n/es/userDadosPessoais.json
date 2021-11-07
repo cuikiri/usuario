@@ -1,0 +1,40 @@
+{
+  "usersApp": {
+    "userDadosPessoais": {
+      "home": {
+        "title": "Dados Pessoais",
+        "createLabel": "Crear nuevo Dados Pessoais",
+        "createOrEditLabel": "Crear o editar Dados Pessoais",
+        "notFound": "Ningún Dados Pessoais encontrado"
+      },
+      "created": "Un nuevo Dados Pessoais ha sido creado con el identificador {{ param }}",
+      "updated": "Un Dados Pessoais ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Dados Pessoais ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Dados Pessoais {{ id }}?"
+      },
+      "detail": {
+        "title": "Dados Pessoais"
+      },
+      "nome": "Nome",
+      "sobreNome": "Sobre Nome",
+      "pai": "Pai",
+      "mae": "Mae",
+      "telefone": "Telefone",
+      "celular": "Celular",
+      "whatsapp": "Whatsapp",
+      "email": "Email",
+      "estadoCivil": "Estado Civil",
+      "raca": "Raca",
+      "religiao": "Religiao",
+      "foto": "Foto",
+      "fotoAvatar": "Foto Avatar",
+      "fotoIcon": "Foto Icon",
+      "mensagem": "Mensagem",
+      "aviso": "Aviso",
+      "documento": "Documento",
+      "endereco": "Endereco",
+      "user": "User"
+    }
+  }
+}
